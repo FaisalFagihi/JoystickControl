@@ -16,7 +16,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:Joystick}">
-                    <Viewbox>
+                    <Grid>
                         <Canvas
                             x:Name="container"
                             Width="{TemplateBinding Width}"
@@ -131,7 +131,7 @@
                             </Border>
 
                         </Canvas>
-                    </Viewbox>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
