@@ -1,0 +1,122 @@
+﻿<Window
+    x:Class="JoystickControl.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:JoystickControl"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="500"
+    Height="500"
+    mc:Ignorable="d">
+
+
+    <!--<local:TestControl Width="200" Height="200" />-->
+    <!--<Canvas
+        Width="280"
+        Height="280"
+        Background="#eee">
+
+        <Canvas.RenderTransform>
+            <TransformGroup />
+        </Canvas.RenderTransform>
+        <Rectangle
+            x:Name="thumbX"
+            Canvas.Left="150"
+            Canvas.Top="7"
+            Width="30"
+            Height="10"
+            Cursor="SizeAll"
+            Fill="#666">
+            <Rectangle.RenderTransform>
+                <TranslateTransform />
+            </Rectangle.RenderTransform>
+            <Rectangle.Effect>
+                <DropShadowEffect
+                    BlurRadius="5"
+                    Direction="180"
+                    ShadowDepth="0"
+                    Color="#ccc" />
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle
+            x:Name="thumbY"
+            Canvas.Left="7"
+            Canvas.Top="125"
+            Width="10"
+            Height="30"
+            Cursor="SizeAll"
+            Fill="#666">
+            <Rectangle.RenderTransform>
+                <TranslateTransform />
+            </Rectangle.RenderTransform>
+            <Rectangle.Effect>
+                <DropShadowEffect
+                    BlurRadius="5"
+                    Direction="180"
+                    ShadowDepth="0"
+                    Color="#ccc" />
+            </Rectangle.Effect>
+        </Rectangle>
+        <Border
+            Canvas.Left="28"
+            Canvas.Top="28"
+            BorderBrush="#bbb"
+            BorderThickness="0"
+            CornerRadius="1">
+            <Canvas
+                x:Name="Space"
+                Width="224"
+                Height="224">
+                <Canvas.RenderTransform>
+                    <TransformGroup />
+                </Canvas.RenderTransform>
+                <Line
+                    x:Name="thumbLine"
+                    Canvas.Left="112"
+                    Canvas.Top="112"
+                    Stroke="#555"
+                    StrokeThickness="10"
+                    X1="0"
+                    Y1="0">
+                    <Line.RenderTransform>
+                        <TransformGroup />
+                    </Line.RenderTransform>
+                    <Line.Effect>
+                        <DropShadowEffect
+                            BlurRadius="5"
+                            Direction="180"
+                            ShadowDepth="0"
+                            Color="#444" />
+                    </Line.Effect>
+                </Line>
+                <Ellipse
+                    x:Name="thumbPoint"
+                    Canvas.Left="90"
+                    Canvas.Top="90"
+                    Width="44"
+                    Height="44"
+                    Cursor="SizeAll"
+                    Fill="#666">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform />
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Effect>
+                        <DropShadowEffect
+                            BlurRadius="5"
+                            Direction="180"
+                            ShadowDepth="0"
+                            Color="#ccc" />
+                    </Ellipse.Effect>
+                </Ellipse>
+            </Canvas>
+
+        </Border>
+    </Canvas>-->
+    <Grid
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        Background="#222">
+        <local:Joystick2 />
+    </Grid>
+</Window>
