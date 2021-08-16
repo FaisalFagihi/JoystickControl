@@ -113,10 +113,10 @@
 
         </Border>
     </Canvas>-->
-    <Grid
-        HorizontalAlignment="Stretch"
-        VerticalAlignment="Stretch"
-        Background="#222">
-        <local:Joystick2 />
+    <Grid>
+        <local:Joystick
+            x:Name="joystick"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" />
     </Grid>
 </Window>

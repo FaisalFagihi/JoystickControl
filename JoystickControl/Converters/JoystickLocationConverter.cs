@@ -14,7 +14,7 @@ namespace JoystickControl
         {
             if (value is double doubleValue)
             {
-                return doubleValue/2;
+                return doubleValue/2 ;
             }
             return value;
         }
